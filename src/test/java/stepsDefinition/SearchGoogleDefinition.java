@@ -20,15 +20,6 @@ public class SearchGoogleDefinition {
     // Defined ChromeDriver
     private RemoteWebDriver driver;
 
-    @Before
-    public void openDriver() {
-    }
-
-    @After
-    public void closeDriver() {
-        driver.close();
-    }
-
     @Given("Load Google website")
     public void loadGoogleWebsite() throws InterruptedException, MalformedURLException {
         // Driver locate
@@ -66,6 +57,7 @@ public class SearchGoogleDefinition {
         String title = driver.getTitle();
         // Assert
         Assert.assertEquals(title,"Leon - Buscar con Google");
+        driver.close();
     }
 
     // TestCase 2
@@ -86,5 +78,6 @@ public class SearchGoogleDefinition {
         String title = driver.getTitle();
         // Assert
         Assert.assertEquals(title,"Perro - Buscar con Google");
+        driver.close();
     }
 }
