@@ -36,7 +36,7 @@ public class SearchGoogleDefinition {
         // Constructor
         //driver = new ChromeDriver();
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserName", "firefox");
         capabilities.setCapability("browserVersion", "109.0");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
