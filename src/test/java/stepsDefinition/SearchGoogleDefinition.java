@@ -36,8 +36,8 @@ public class SearchGoogleDefinition {
         // Constructor
         //driver = new ChromeDriver();
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "opera");
-        capabilities.setCapability("browserVersion", "93.0");
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "109.0");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         driver = new RemoteWebDriver(new URL("http://192.168.1.150:4444/wd/hub"), capabilities);
