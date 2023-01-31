@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 // Cucumber options - features and steps location
 @CucumberOptions(
         features = "src/test/java/features",
-        glue = ("stepsDefinition")
+        glue = "stepsDefinition",
+        tags = "@Test1"
 )
 
 // Main class
