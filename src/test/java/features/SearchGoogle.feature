@@ -9,6 +9,7 @@ Feature: Google Search
     Then Result is displayed Lion
 
   @Test2 @All
+
   Scenario: Simple Google search
     When Look up the word Dog
     Then Result is displayed Dog

@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        TAGS = "@Test2"
+        TAGS = "@Test1"
     }
     agent {
         docker {
